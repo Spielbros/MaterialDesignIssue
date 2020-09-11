@@ -15,7 +15,7 @@
                 <RowDefinition Height="50" />
                 <RowDefinition Height="50" />
             </Grid.RowDefinitions>
-            <TextBox x:Name="TestLabel" Grid.Row="0" Text="230" md:TextFieldAssist.SuffixText="V" IsEnabled="False" Margin="10" VerticalAlignment="Center" Visibility="Collapsed" />
+            <TextBox x:Name="TestLabel" Grid.Row="0" Text="This is a readonly text" IsEnabled="False" Margin="10" VerticalAlignment="Center" Visibility="Collapsed" />
             <Button  x:Name="TestButton" Grid.Row="1" Content="Click to toggle visibility" Margin="10" Click="TestButton_Click"/>
         </Grid>
     </Grid>
