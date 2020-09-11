@@ -1,0 +1,22 @@
+﻿<Window x:Class="MaterialDesignInXaml_VisibiltyIssue.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MaterialDesignInXaml_VisibiltyIssue"
+        xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Background="{DynamicResource MaterialDesignPaper}"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="300">
+    <Grid>
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <TextBox x:Name="TestLabel" Grid.Row="0" Text="230" md:TextFieldAssist.SuffixText="V" IsEnabled="False" Margin="10" VerticalAlignment="Center" Visibility="Collapsed" />
+            <Button  x:Name="TestButton" Grid.Row="1" Content="Click to toggle visibility" Margin="10" Click="TestButton_Click"/>
+        </Grid>
+    </Grid>
+</Window>
